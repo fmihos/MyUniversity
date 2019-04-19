@@ -28,6 +28,8 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.EnrollmentDate)
         </dd>
+        @if (Model.Enrollments.Count() > 0)
+            { 
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Enrollments)
         </dt>
@@ -50,6 +52,7 @@
                 }
             </table>
         </dd>
+        }
     </dl>
 </div>
 <div>
